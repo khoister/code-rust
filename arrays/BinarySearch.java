@@ -6,6 +6,11 @@ import static com.google.common.truth.Truth.assertThat;
 public class BinarySearch {
     public static int ERROR = -1;
 
+    /**
+     * Iterative integer binary search
+     *
+     * @return the index of element if found, otherwise return ERROR
+     */
     public static int find(int[] arr, int key) {
         if (arr == null || arr.length <= 0) {
             throw new IllegalArgumentException("Invalid input data");
